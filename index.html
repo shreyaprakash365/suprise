@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Clue #1</title>
+  <style>
+    body { 
+      background-color: black; 
+      color: white; 
+      font-family: Georgia, serif; 
+      text-align: center; 
+      padding: 80px; 
+    }
+    .btn {
+      padding: 10px 20px;
+      background: white;
+      color: black;
+      border-radius: 6px;
+      font-weight: bold;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <h1>Your First Clue</h1>
+  <p>“I begin where our story first sparked.  
+     Where was I when we called for the first time? [Place or Space]”</p>
+
+  <p>Type the answer (one word):</p>
+
+  <input id="answer" />
+  <button onclick="check()">Submit</button>
+
+  <script>
+    function check() {
+      let x = document.getElementById("answer").value.toLowerCase();
+      if (x === "hotel" || x === "room" || x === "US" || x === "U.S." || x === "USA"|| x === "America"|| x === "NASA"|| x === "Hunstville"|| x === "Alabama"|| x === "bed") {
+        window.location.href="page2.html";
+      } else {
+        alert("Hmm… try again, love.");
+      }
+    }
+  </script>
+</body>
+</html>
