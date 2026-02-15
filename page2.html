@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Clue #2</title>
+  <style>
+    body { background: #111; color: #eee; font-family: Georgia; text-align: center; padding: 80px; }
+  </style>
+</head>
+<body>
+  <h1>Clue #2</h1>
+  <p>“When was the first time you said "I love you" directly? Answer in dd/mm/yy please <3”</p>
+
+  <input id="ans2" />
+  <button onclick="check2()">Submit</button>
+
+  <script>
+    function check2() {
+      let val = document.getElementById("ans2").value.toLowerCase();
+      if (val === "10/07/24" || val === "09/07/24") {
+        window.location.href="page3.html";
+      } else {
+        alert("Nope—but cute guess.");
+      }
+    }
+  </script>
+</body>
+</html>
